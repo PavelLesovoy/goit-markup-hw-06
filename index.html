@@ -385,13 +385,53 @@
     </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop " data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>
                 <svg class="modal-close-icon" width="11" height="11">
                     <use href="./images/icons/sprite.svg#close-icon"></use>
                 </svg>
             </button>
+            <p>Оставьте свои данные, мы вам перезвоним</p>
+            <form class="contact-form">
+                <label class="contact-form-field">
+                    <span class="contact-form-data">Имя</span>
+                    <span class="contact-form-input-wrapper">
+                    <input name="user_name" class="contact-form-input" type="text" required />
+                    <svg class="contact-form-icon" width="12" height="12">
+                        <use href="./images/icons/sprite.svg#person"></use>
+                    </svg>
+                    </span>
+                </label>
+                <label class="contact-form-field">
+                    <span class="contact-form-data">Телефон</span>
+                    <span class="contact-form-input-wrapper">
+                    <input name="user_phone" class="contact-form-input" type="tel" required />
+                    <svg class="contact-form-icon" width="13" height="13">
+                        <use href="./images/icons/sprite.svg#phone"></use>
+                    </svg>
+                </span>
+                </label>
+                <label class="contact-form-field">
+                    <span class="contact-form-data">Почта</span>
+                    <span class="contact-form-input-wrapper">
+                    <input name="user_email" class="contact-form-input" type="email" required />
+                    <svg class="contact-form-icon" width="15" height="12">
+                        <use href="./images/icons/sprite.svg#contact-email"></use>
+                    </svg>
+                </span>
+                </label>
+                <label class="contact-form-field">
+                    <span class="contact-form-data">Комментарий</span>
+                    <textarea name="user_massage" class="contact-form-message" placeholder="Введите текст"></textarea>
+                </label>
+                <div class="contact-form-checkbox-wrapper">
+                    <imput name="accept-policy" type="checkbox" class="contact-form-checkbox" required />
+                    <label for="" class="contatc-form-checkbox-label"
+                        >Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+                </div>
+                <button type="submit" class="contact-form-submit-btn">Отправить</button>
+            </form>
         </div>
     </div>
 
