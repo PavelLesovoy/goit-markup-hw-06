@@ -382,10 +382,21 @@
                 </li>
             </ul>
         </div>
+        <form action="" class="subscribe-block">
+            <p class="subscribe-title">Подпишитесь на рассылку</p>
+            <div class="subscribe-content">
+                <input type="email" name="email" placeholder="E-mail">
+                <button class="subscribe-btn" type="submit">Подписаться
+                    <svg class="subscribe-icon" width="24" height="24">
+                        <use href="./images/icons/sprite.svg#send"></use>
+                    </svg>
+                </button>
+            </div>
+        </form>
     </div>
     </footer>
 
-    <div class="backdrop " data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>
                 <svg class="modal-close-icon" width="11" height="11">
@@ -428,7 +439,7 @@
                 <div class="contact-form-checkbox-wrapper">
                     <input name="accept-policy" type="checkbox" class="contact-form-checkbox visual-hiden" id="policy-checkbox" required />
                     <label for="policy-checkbox" class="contatc-form-checkbox-label"
-                        >Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label
+                        >Соглашаюсь с рассылкой и принимаю&nbsp;<a href="">Условия договора</a></label
                         >
                 </div>
                 <button type="submit" class="contact-form-submit-btn">Отправить</button>
